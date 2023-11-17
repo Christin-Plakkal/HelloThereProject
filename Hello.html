@@ -29,16 +29,21 @@ option.hidde{
     display: none;
 }
         </style> -->
+        <script>
+            function myFunction(){
+                document.getElementById("helllo").selectedIndex = "-1";}
+        </script>
         <style>span{
     display:none;}</style>
     </head>
-    <body>
+    <body onload="myFunction()">
         <div class="hidden" disabled="disabled" hidden="hidden" >Hi There</div>
         <div hidden="hidden" >Hi There</div>
-        <div><select>
+        <div><select id="helllo">
+            <option hidden="hidden" class="Hideen4" value="hid4">Hideen4</option>
             <option value="hi">Hi</option>
             <option id="hi" class="hidde" value="hidden">Hideen1as</option>
-            <option hidden="hidden" value="hid1" style="display: none !important;background-color: red;-webkit-opacity:0;">Hideen1</option>
+            <option hidden="hidden" value="hid1" style="display: none !important;background-color: red;">Hideen1</option>
             <option hidden="hidden" value="hid2">Hideen2</option>
             <option hidden="hidden" selected="selected" value="hid3">Hideen3</option>
             <option hidden="hidden" class="Hideen4" selected="selected" value="hid4">Hideen4</option>
